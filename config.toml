@@ -1,0 +1,546 @@
+# Page settings
+baseurl = "https://telenaco.github.io/"
+title = "Luis Berna"
+languageCode = "en-us"
+[markup.goldmark.renderer]
+unsafe = true
+
+[params]
+custom_css = ["css/style.css"]
+# Meta
+author = ""
+description = ""
+email = ""
+# Google Maps Javascript API Key (if not set will default to not passing a key)
+googleMapsApiKey = ""
+
+# Navigation
+[params.navigation]
+brand = "Jose Luis Berna Moya"
+home = "About"
+commissions = "Commissions"
+publi = "Publications"
+collab = "Collaborations"
+other = "Other Work"
+contact = "Contact"
+
+[params.hero]
+
+links = [
+  ["icon-linkedin", "https://www.linkedin.com/in/jlberna/"],
+  ["icon-envelope", "mailto:j.berna@sussex.ac.uk"],
+]
+title = "Digital Artist & HCI Researcher"
+subtitle = "HCI + ART"
+
+# Intro section
+# Available icons: http://simplelineicons.com/
+# --------------------------------------------------------------------------------------------------------------
+[params.intro]
+button = "view Resume"
+enableBox = true
+enableList = true
+
+
+[[params.intro.item]]
+title = "Education"
+description = ""
+url = ""
+button = ""
+icon = "icon-university"
+img = "img_1.jpg"
+list = [
+  "PhD in Informatics, Interact Lab (pre-sub) <br> • Novel formats for 3D User Interfaces: VR and beyond",
+  "University of Sussex 2017 - present",
+  "BEng Elec. Eng (1st)",
+  "University of Sussex 2012 - 2015"
+]
+
+[[params.intro.item]]
+title = "Interests"
+description = ""
+url = ""
+button = ""
+icon = "icon-wrench"
+img = "img_8.jpg"
+list = [
+  "Novel displays",
+  "Multisensory interfaces",
+  "Electronic / embedded system",
+  "VR / XR",
+  "Human Computer Interaction",
+  "New Media Art"
+]
+
+[params.intro.biog]
+title = "About"
+description = [
+  "I am originally from Spain and have called Brighton my home for 14 years. Recently, I have moved to Limerick, where I currently reside. My passion for technology and innovation led me to pursue a Bachelor degree in Electronic Engineering in 2015. After completing my degree, I had the privilege of working as a research technician at two highly respected research labs, the former [Interact Lab](https://twitter.com/labinteract) and [SCHI lab](https://multi-sensory.info/), which have now been consolidated into [the Multi-Sensory Devices (MSD)](https://www.ucl.ac.uk/computer-science/research/research-groups/multi-sensory-devices) group at UCL. As a research technician, I was responsible for maintaining the labs and providing hardware and software support to the researchers on the team. My work at the lab drew me in and I ended up collaborating on various papers and projects, which led me to pursue a PhD with Diego Martinez Plasencia, where I explored haptic controllers for VR and developed an open-source framework for modeling force feedback devices." , "As a multidisciplinary maker, I have experience in digital fabrication, embedded systems, VR, 3D modeling, and electronics, among other things. My research interests lie in multisensory technology, ephemeral displays, and novel displays such as smoke or bubbles. I have collaborated on multiple artistic and research projects over the last year, using my knowledge to create engaging and interactive art.","Over the past 4 years, I have collaborated with various artists, which led to the creation of Bubaki Design, a creative studio I founded in partnership with [Catherine Ireton](http://www.catherineireton.com/), a musician, site-specific artist and theatre maker. We interest is in creating experiences that leave people with a sense of wonder and awe. My PhD in VR and haptic technology, combined with my experience as a multidisciplinary maker, have given me the skills and knowledge to create cutting-edge interactive art that pushes the boundaries of what is possible. Now that I am finishing my PhD, I am excited to bring my knowledge and expertise to the field of interactive art and continue exploring the intersection of technology and art." 
+]
+otherWorkList = "Service & Volunteering"
+otherWork = [
+  "Teaching - Teaching assistant at University of Sussex - Interactive Design" ,
+  "Training - Touch, Taste, & Smell User Interfaces: The Future of Multisensory HCI (CHI 2016)",
+  "Volunteering - ISS 2017" ,
+  "Outreach - Cheltenham Science Festival 2017",
+  "Outreach - Brighton Science festival 2017" ,
+  ]
+
+
+
+# publications section clone from work
+# --------------------------------------------------------------------------------------------------------------
+[params.commissions]
+enable = true
+title = "Recent Commissions"
+description = ""
+footertext = ''
+
+[[params.commissions.row]]
+img = "exploratoryWorkshops.png"
+more = "exploratoryWorkshops1.png"
+alt = ""
+title = "Exploratory Workshop"
+subtitle = ""
+summary = "I had the privilege of collaborating with Twisted Lane, based in Connemara. During a week-long residency in the picturesque Letterfrack, I worked alongside talented artists, designers, and creative technologists to investigate interdisciplinary performance concepts. "
+
+
+[[params.commissions.row]]
+img = "8years.png"
+more = "https://www.youtube.com/watch?v=VORnOzZLa3o"
+alt = ""
+title = "8 years"
+subtitle = ""
+
+summary = "\"Eight Years\" is an immersive musical performance that features eight ice lanterns. As the ice melts, it activates musical sounds that fill the performance space. The piece, designed to be experienced in a circular arrangement, lasts 8 minutes and serves as a reflection on the 2019 IPCC report, which stated that there are only eight years left to mitigate the worst effects of the climate crisis. It made its debut at the Acoustic Ecology Festival at the Attenborough Centre for Creative Arts in Brighton in 2020 "
+
+
+
+[[params.commissions.row]]
+img = "speechBubbles.png"
+more = "https://www.youtube.com/watch?v=znBHM3QOjUY"
+alt = ""
+title = "Speech Bubbles"
+subtitle = ""
+
+summary = "Part of the commission for the MKIAC yearly festival, \"Art in the Park,\". Although the festival was cancelled. The installation invites the audience to share their voice into a microphone, capturing their words  within balloons that inflate and shimmer with color. The sounds of their speech are then replayed in the room, accompanied by a musical score. This commission celebrates the rich tapestry of diversity and language."
+
+
+
+# publications section clone from work
+# --------------------------------------------------------------------------------------------------------------
+[params.publi]
+enable = true
+title = "Publications"
+description = ""
+footertext = ''
+
+[[params.publi.row]]
+img = "recoil.png"
+more = "Exploring_the_Effects_Page_01.png"
+alt = ""
+title = "Exploring the Effects of Replicating Shape, Weight and Recoil Effects on VR Shooting Controllers"
+subtitle = "Haptics, VR"
+links = [
+  ["icon-file-pdf-o", "/pdfs/Exploring_the_Effects.pdf"],
+  ["icon-link2", "https://link.springer.com/chapter/10.1007/978-3-030-29381-9_45"]
+]
+summary = "Virtual Reality (VR) controllers with realistic force feedback for first-person shooting (FPS) games are emerging to enhance realism and immersion. These controllers imitate the shape, weight, and recoil. This paper explores the impact of these properties on VR performance for general users with no marksmanship experience, providing insights for consumers and manufacturers."
+
+
+[[params.publi.row]]
+img = "programmable.png"
+more = "Programmable_liquid_Page_1.png"
+alt = ""
+title = "Programmable liquid matter: 2D shape deformation of highly conductive liquid metal in a dynamic electric field."
+subtitle = "TUI, Displays"
+links = [
+  ["icon-file-pdf-o", "/pdfs/Programmable_liquid.pdf"],
+  ["icon-link2", "https://dl.acm.org/doi/10.1145/3132272.3134132"],
+  ["icon-youtube", "https://www.youtube.com/watch?v=nSFwbCjnyY4"]
+]
+summary = "We present a method for transforming liquid into unique organic shapes through controlled electric fields. Our system uses a droplet of liquid metal and electrodes to manipulate its surface tension, resulting in dynamic, reconfigurable shapes. The work explores the potential for programmable materials and reflects on the challenges of controlling liquid in this manner."
+
+
+
+[[params.publi.row]]
+img = "foosball.png"
+more = "Haptic_rules_Page_1.png"
+alt = ""
+title = "Haptic rules! Augmenting the gaming experience in traditional games:The case of foosball"
+subtitle = "Haptics"
+links = [
+  ["icon-file-pdf-o", "/pdfs/Haptic_rules.pdf"],
+  ["icon-link2", "https://ieeexplore.ieee.org/document/7989940"],
+  ["icon-youtube", "https://www.youtube.com/watch?v=cO74wNvtdgg"]
+]
+summary = "This study explores the role of haptic feedback in enhancing traditional, non-digital games. By focusing on haptic-based enhancements in player interactions, the study proposes \"haptic rules\" to enrich the gaming experience. The study applies this concept to the game of foosball, evaluating its impact on gameplay and user experience."
+
+
+# Academic collaborations
+# --------------------------------------------------------------------------------------------------------------
+[params.collab]
+enable = true
+title = "Collaborations"
+description = "For the past 7 years, I have been fortunate to assist various researchers in their endeavors. I provided technical support by developing hardware or software for a number of projects. The following is a brief overview of some of the projects that resonated most to me"
+
+
+[[params.collab.row]]
+img = "MappingScent.png"
+more = "what_did_I_sniff_Page_01.png"
+alt = " "
+title = "What Did I Sniff?: Mapping Scents Onto Driving-Related Message"
+subtitle = "Smell Interfaces"
+links = [
+  ["icon-file-pdf-o", "/pdfs/what_did_I_sniff.pdf"],
+  ["icon-link2", "https://dl.acm.org/doi/10.1145/3122986.3122998"]
+]
+summary = "A study was conducted to explore the potential use of the sense of smell in in-car interaction design. Three driving-related messages (Slow down, Fill gas, Passing by a point of interest) were mapped to four scents (lemon, lavender, peppermint, rose). Results showed strong associations between the messages and scents, confirmed in a second study where participants expressed their preferences while completing a simulated driving task. The findings highlight the potential of olfactory communication as a modality in enhancing the in-car experience."
+
+[[params.collab.row]]
+img = "mistForm.png"
+more = "mistform_Page_01.png"
+alt = " "
+title = "MistForm: Adaptive Shape Changing Fog Screens"
+subtitle = "Displays"
+links = [
+  ["icon-file-pdf-o", "/pdfs/mistform.pdf"],
+  ["icon-link2", "https://dl.acm.org/doi/10.1145/3025453.3025608"],
+  ["icon-youtube", "https://www.youtube.com/watch?v=XXsfO_jIvg4"]
+]
+summary = "MistForm is a shape-shifting fog display that creates an immersive experience for users. It combines the benefits of shape-shifting interfaces and mid-air displays for a unique blend of form and function. With the ability to change its shape, the display adapts to individual or collaborative needs and even affects the brightness and clarity of the content. Through machine learning and a custom rendering algorithm, MistForm overcomes challenges such as image distortion to deliver an artful, dynamic viewing experience."
+
+[[params.collab.row]]
+img = "tableTop.png"
+more = "tableHop_Page_01.png"
+alt = " "
+title = "TableHop: An Actuated Fabric Display Using Transparent Electrodes"
+subtitle = "Haptics, Displays"
+links = [
+  ["icon-file-pdf-o", "/pdfs/tableHop.pdf"],
+  ["icon-link2", "https://dl.acm.org/doi/10.1145/2858036.2858544"],
+  ["icon-youtube", "https://www.youtube.com/watch?v=RBhb_gpaMc0"]
+]
+summary = "TableHop is an innovative tabletop display that blends self-actuated deformation, vibro-tactile feedback and high-res visual projection on a stretchable spandex fabric surface. Controlled by transparent electrodes, the surface can deform up to 5mm and function as a diffuser for projections while avoiding occlusion. Experience expressive interactions and localized tactile sensations with TableHop, a unique blend of art and technology."
+
+[[params.collab.row]]
+img = "gustInterfaces.png"
+more = "GustatoryInterfaces_Page_1.png"
+alt = ""
+title = "Gustatory Interface: The Challenges of ‘How’ to Stimulate the Sense of Taste"
+subtitle = "Taste Interfaces, Levitation"
+links = [
+  ["icon-file-pdf-o", "/pdfs/GustatoryInterfaces.pdf"],
+  ["icon-link2", "https://dl.acm.org/doi/10.1145/3141788.3141794"],
+  ["icon-youtube","https://www.youtube.com/watch?v=ZQxgBs0mFPA"]
+]
+summary = "This paper delves into the growing trend of gustatory interfaces in HCI. It explore previous works on this topic and categorize them based on the method of stimulation (chemicals, electricity, or heat). The authors then present two new approaches to delivering gustatory experiences: a traditional mouthpiece and a cutting-edge contactless delivery system based on acoustic levitation. The paper highlights the design challenges and opportunities of each approach and looks into overcoming obstacles in stimulating the sense of taste."
+
+[[params.collab.row]]
+img = "metamaterials.png"
+more = "metamaterials_Page_1.png"
+alt = ""
+title = "Acoustic levitation - Metamaterial bricks and quantization of meta-surfaces"
+subtitle = "Physics, Metamaterials, Levitation"
+links = [
+  ["icon-file-pdf-o", "/pdfs/metamaterials.pdf"],
+  ["icon-link2", "https://www.nature.com/articles/ncomms14608"],
+  ["icon-youtube", "https://www.youtube.com/watch?v=nKAwYGcP9_s"]
+]
+summary = "Traditional acoustic field control approaches use costly phased arrays or fixed lenses. This solution introduces quantal meta-surfaces, using pre-made 3D units called metamaterial bricks for phase delay encoding. By assembling these bricks, meta-surfaces can produce any diffraction-limited acoustic field, leading to acoustic focusing, steering and levitation. This approach simplifies acoustic device design and brings us closer to spatial sound modulation."
+
+[[params.collab.row]]
+img = "sensabubble.png"
+more = "sensabubble_Page_01.png"
+alt = " "
+title = "Multimodal Mixed-Reality Display System"
+subtitle = "Displays, Smell Interfaces"
+links = [
+  ["icon-youtube", "https://www.youtube.com/watch?v=JGUmf4HqTxM"]
+]
+summary = "I worked on a later development on SensaBubble for an installation for Uniliver, Sensabubble is a chrono-sensory mid-air display system that generates scented bubbles to deliver information via multiple sensory modalities. Technical and user evaluations demonstrate its potential for use in a range of applications, from peripheral displays to engaging gaming and education."
+
+[[params.collab.row]]
+img = "joled.png"
+more = "joled_Page_01.png"
+alt = " "
+title = "JOLED: A Mid-air Display based on Electrostatic Rotation of Levitated Objects"
+subtitle = "Displays, Levitation"
+links = [
+  ["icon-file-pdf-o", "/pdfs/joled.pdf"],
+  ["icon-link2", "https://dl.acm.org/doi/10.1145/2984511.2984549"],
+  ["icon-youtube", "https://www.youtube.com/watch?v=U-wAGqZ_Qcg"]
+]
+summary = "JOLED is a mid-air display for interactive physical visualization using Janus objects as physical voxels. It uses electrostatic rotation and acoustic levitation to control each voxel's angular position and 3D position, respectively. This paper demonstrates a voxel update speed of 37.8 ms/flip, enabling physical games and interactive displays."
+
+[[params.collab.row]]
+img = "ospace.png"
+more = "ospace_Page_01.png"
+alt = " "
+title = "OSpace: Towards a Systematic Exploration of Olfactory Interaction Spaces"
+subtitle = "Smell Interfaces"
+links = [
+  ["icon-file-pdf-o", "/pdfs/ospace.pdf"],
+  ["icon-link2", "https://dl.acm.org/doi/10.1145/3132272.3134121"],
+  ["icon-youtube", "https://www.youtube.com/watch?v=ClvYv-ZdSDw"]
+]
+summary = "OSpace is an approach for designing olfactory interfaces, exploring how different scent delivery, detection, and lingering parameters affect user experience. Results show that scents can be perceived within 10 seconds and disappear in 9 seconds, with or without air extraction. Practical applications are discussed for HCI researchers and practitioners."
+
+# other work section
+# --------------------------------------------------------------------------------------------------------------
+[params.other]
+enable = true
+title = "Other Work"
+description = "As a creative technologist, I have explored a wide range of disciplines. My research in multisensory technologies has enabled me to develop innovative interactive works that explore the relationship between people and technology. My work have been featured in exhibitions and publications and I continue to explore the potential of technology in creative practice. I am passionate about pushing the boundaries to create meaningful, engaging interactions between people and technology."
+
+[[params.other.item]]
+title = "Workshops"
+description = "Far far away, behind the worarrksgrove right at the coast of the Semantics, a large language ocean"
+img = "electWorkshop.png"
+more = "electWorkshop.png"
+alt = " "
+summary = "At past workshops, I utilized Voice coils and thermochromatic paint to craft dynamic, imaginative approaches to bringing STEAM topics to life. From captivating color-changing art to interactive soundscapes, these creative tools create a truly captivating experience."
+
+[[params.other.item]]
+title = "XR content and Video Mapping"
+img = "january.png"
+more = "january.png"
+alt = " "
+summary = "Through my work with bubbles, smoke, and ice as displays, I have been able to explore a multitude of ways to transform our surroundings into interactive spectacles. From mesmerizing fogscapes to otherworldly ice sculptures, these techniques can create an immersive and captivating atmosphere."
+
+
+[[params.other.item]]
+title = "Digital Fabrication"
+img = "digitalManufacturing.png"
+more = "digitalManufacturing.png"
+alt = " "
+summary = "Through my expertise in 3D printing, CNC, and laser cutting, I am able to bring an vision to life easier than ever before. From bespoke sculptures to personalized pieces, these techniques provide the tools to create a truly unique and captivating work of art."
+
+# template original sections 
+# --------------------------------------------------------------------------------------------------------------
+
+# template sections -----------------------------------------------------------
+# Intro section
+# Available icons: http://simplelineicons.com/
+# [params.intro]
+# [[params.intro.item]]
+#   title = "Plan"
+#   description = "Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts."
+#   url = "#"
+#   button = "Get In Touch"
+#   icon = "icon-bulb"
+#   img = "img_7.jpg"
+# [[params.intro.item]]
+#   title = "Develop"
+#   description = "Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts."
+#   url = "#"
+#   button = "Click Me"
+#   icon = "icon-wrench"
+#   img = "img_8.jpg"
+# [[params.intro.item]]
+#   title = "Launch"
+#   description = "Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts."
+#   url = "#"
+#   button = "Why us?"
+#   icon = "icon-rocket"
+#   img = "img_10.jpg"
+# [params.intro.video]
+#   enable = true
+#   title = "Watch the video"
+#   icon = "icon-play2"
+#   url = "https://vimeo.com/channels/staffpicks/93951774"
+# Work section
+[params.work]
+enable = false
+title = "Work"
+description = "Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts."
+footertext = '** Demo images from <a href="http://plmd.me/" target="_blank">plmd.me</a>'
+
+[[params.work.row]]
+img = "work_1.jpg"
+alt = "Image2"
+title = "Project 1"
+subtitle = "Branding"
+
+[[params.work.row]]
+img = "work_2.jpg"
+alt = "Image2"
+title = "Project 2"
+subtitle = "Design"
+
+[[params.work.row]]
+img = "work_3.jpg"
+alt = "Image3"
+title = "Project 3"
+subtitle = "Design"
+
+[[params.work.row]]
+img = "work_4.jpg"
+alt = "Image4"
+title = "Project 4"
+subtitle = "Design"
+
+[[params.work.row]]
+img = "work_5.jpg"
+alt = "Image5"
+title = "Project 5"
+subtitle = "Design"
+
+[[params.work.row]]
+img = "work_6.jpg"
+alt = "Image6"
+title = "Project 6"
+subtitle = "Design"
+
+# Testimonials section
+[params.testimonials]
+enable = false
+title = "Testimonials"
+description = "Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts."
+
+[[params.testimonials.item]]
+quote = "&ldquo;Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean.&rdquo;"
+person = 'Jean Doe, CEO <a href="http://freehtml5.co/" target="_blank">FREEHTML5.co</a> <span class="subtext">Creative Director</span>'
+img = "person1.jpg"
+alt = "Person1"
+
+[[params.testimonials.item]]
+quote = "&ldquo;Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean. Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.&rdquo;"
+person = 'John Doe, Senior UI <a href="http://freehtml5.co/" target="_blank">FREEHTML5.co</a> <span class="subtext">Creative Director</span>'
+img = "person2.jpg"
+alt = "Person2"
+
+[[params.testimonials.item]]
+quote = "&ldquo;Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. &rdquo;"
+person = 'Chris Nash, Director <a href="http://freehtml5.co/" target="_blank">FREEHTML5.co</a> <span class="subtext">Creative Director</span>'
+img = "person3.jpg"
+alt = "Person3"
+
+# Services section
+[params.services]
+enable = false
+title = "Services"
+description = "Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts."
+
+[[params.services.item]]
+title = "Brand &amp; Strategy"
+description = "Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean"
+icon = "icon-anchor"
+
+[[params.services.item]]
+title = "Web &amp; Interface"
+description = "Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean"
+icon = "icon-layers2"
+
+[[params.services.item]]
+title = "Photo &amp; Video"
+description = "Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean"
+icon = "icon-video2"
+
+[[params.services.item]]
+title = "CMS &amp; eCommerce"
+description = "Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean"
+icon = "icon-monitor"
+
+# About section
+[params.about]
+enable = false
+title = "About"
+description = "Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts."
+
+[[params.about.item]]
+name = "Jean Smith"
+position = "Web Designer"
+description = "Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts"
+img = "person1.jpg"
+alt = "Person1"
+social = [["icon-twitter", "#"], ["icon-facebook", "#"], ["icon-linkedin", "#"]]
+
+[[params.about.item]]
+name = "Rob Smith"
+position = "Web Developer"
+description = "Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts"
+img = "person2.jpg"
+alt = "Person2"
+social = [["icon-twitter", "#"], ["icon-facebook", "#"], ["icon-github", "#"]]
+
+[[params.about.item]]
+name = "Larry Ben"
+position = "Web Designer"
+description = "Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts"
+img = "person3.jpg"
+alt = "Person3"
+social = [["icon-twitter", "#"], ["icon-facebook", "#"], ["icon-dribbble", "#"]]
+
+# Counters section
+[params.counters]
+enable = false
+title = "Stats"
+background = "full_image_1.jpg"
+
+[[params.counters.item]]
+description = "Finished projects"
+icon = "icon-briefcase"
+from = 0
+to = 89
+interval = 50
+speed = 5000
+
+[[params.counters.item]]
+description = "Lines of code"
+icon = "icon-code"
+from = 0
+to = 2343409
+interval = 50
+speed = 5000
+
+[[params.counters.item]]
+description = "Cups of coffee"
+icon = "icon-cup"
+from = 0
+to = 1302
+interval = 50
+speed = 5000
+
+[[params.counters.item]]
+description = "Happy clients"
+icon = "icon-people"
+from = 0
+to = 52
+interval = 50
+speed = 5000
+
+# Contact section
+[params.contact]
+enable = true
+map = true
+form = true
+title = "Get in touch"
+description = ""
+# Available icons: http://simplelineicons.com/
+details = [
+  [
+    "icon-home",
+    "Sarsfield Ave, Limerick, <br> V94 DW21"
+  ],
+  ["icon-envelope", "j.berna@sussex.ac.uk"]
+  # [
+  #   "icon-globe",
+  #   '<a href="http://freehtml5.co/" target="_blank">freehtml5.co</a>'
+  # ]
+]
+name = "Name"
+email = "Email"
+phone = "Phone"
+message = "Message"
+button = "Send message"
+
+# Footer section
+[params.footer]
+enable = true
+copyright = '&copy; Jose Luis Berna Moya 2022'
+links = [
+  # ["icon-twitter", "#twitter"],
+  # ["icon-facebook", "#facebook"],
+  # ["icon-youtube", "#youtube"]
+]

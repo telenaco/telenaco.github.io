@@ -1,0 +1,40 @@
+<section id="fh5co-imageBlock" data-section="commissions" style="background-image: url(images/smokeScreen.png);">
+	<div class="gradient"></div>
+	<div class="container">
+		<div class="row">
+			<div class="col-md-12 section-heading text-center">
+				<h2 class="to-animate">{{ with .Site.Params.commissions.title }}{{ . }}{{ end }}</h2>
+				<div class="row">
+					<div class="col-md-8 col-md-offset-2 subtext to-animate">
+						<h3>{{ with .Site.Params.commissions.description }}{{ . | markdownify }}{{ end }}</h3>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="row row-bottom-padded-md">
+			{{ range $i, $e := .Site.Params.commissions.row }}
+			<div class="col-lg-4 col-md-4 col-xs-12">
+				{{ if (strings.Contains .more "you") }}
+				<a href="images/{{ .more }}" class="fh5co-project-item popup-youtube to-animate">
+					<img src="images/{{ .img }}" alt="{{ .alt }}" class="img-responsive">
+					{{else}}
+					<a href="images/{{ .more }}" class="fh5co-project-item image-popup to-animate">
+						<img src="images/{{ .img }}" alt="{{ .alt }}" class="img-responsive">
+						{{end}}
+
+						<div class="fh5co-text">
+							<h2>{{ .title }}</h2>
+							<span>{{ .subtitle }}</span>
+						</div>
+
+						<div class="fh5co-text">
+							<p>{{ .summary }}</p>
+
+						</div>
+					</a>
+				</div>
+			{{ end }}
+		</div>
+	</div>
+</section>

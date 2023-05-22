@@ -1,0 +1,30 @@
+<section id="fh5co-home" data-section="home" style="background-image: url(images/smokeScreen.png);"
+	data-stellar-background-ratio="1.0">
+	<div class="gradient"></div>
+	<div class="container">
+		<div class="text-wrap">
+			<div class="text-inner">
+				<div class="row">
+					<div class="col-md-8 col-md-offset-2">
+
+						<h1 class="to-animate">
+							<div><img src="images/avatar.png" alt="profile picture" style="width: 20%;"></div>
+							<div class="col-md-12 text-center" style="padding-top: 0.5em;padding-bottom: 0.5em;">
+								<ul class="social social-circle">
+									{{ range .Site.Params.hero.links }}
+									<li><a href="{{ with index . 1}}{{ . }}{{ end }}"><i
+												class="{{ with index . 0}}{{ . }}{{ end }}"></i></a></li>
+									{{ end }}
+								</ul>
+							</div>
+
+							{{ with .Site.Params.hero.title }}{{ . | markdownify }}{{ end }}
+						</h1>
+						<h2 class="to-animate">{{ with .Site.Params.hero.subtitle }}{{ . | markdownify }}{{ end }}</h2>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="slant"></div>
+</section>

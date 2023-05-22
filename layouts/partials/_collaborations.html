@@ -1,0 +1,48 @@
+<section id="fh5co-imageBlock1" data-section="collab" style="background-image: url(images/smokeScreen.png);">
+	<div class="gradient"></div>
+	<div class="container">
+		<div class="row col-md-12 section-heading text-center">
+			<h2 class="to-animate">{{ with .Site.Params.collab.title }}{{ . }}{{ end }}</h2>
+			<div class="col-md-8 col-md-offset-2 subtext to-animate" style="text-align: left;">
+				<h3>{{ with .Site.Params.collab.description }}{{ . | markdownify }}{{ end }}</h3>
+			</div>
+		</div>
+
+
+		<div class="row row-bottom-padded-sm">
+			{{ range .Site.Params.collab.row }}
+			<div class="col-lg-4 col-md-4 col-xs-12">
+				<a href="images/{{ .more }}" class="fh5co-project-item image-popup to-animate">
+					<img src="images/{{ .img }}" alt="{{ .alt }}" class="img-responsive">
+					<div class="fh5co-text">
+						<h2>{{ .title }}</h2>
+						<span>{{ .subtitle }}</span>
+					</div>
+
+					{{/*  add small summary for the box  */}}
+					{{ if  .summary }}
+					<div class="fh5co-text">
+						<p>{{ .summary }}</p>
+					</div>
+					{{ end }}
+				</a>
+
+				{{ range .links }}
+				<ul class="to-animate"
+					style="display:inline-block;padding-left: 15px; padding-bottom: 20px;font-size: 25px !important;">
+					{{ if (eq (index . 0)  "icon-youtube") }}
+					<a href="{{ with index . 1}}{{ . }}{{ end }}" class="popup-youtube">
+						<i class="{{with index . 0}}{{ . }}{{ end }}"></i>
+					</a>
+					{{ else }}
+					<a href="{{ with index . 1}}{{ . }}{{ end }}" target="_blank" rel="noopener noreferrer">
+						<i class="{{ with index . 0}}{{ . }}{{ end }}"></i>
+					</a>
+					{{ end }}
+				</ul>
+				{{ end }}
+			</div>
+			{{ end }}
+		</div>
+	</div>
+</section>

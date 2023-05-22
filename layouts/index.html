@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]>      <html class="no-js"> <![endif]-->
+<html>
+
+<head>
+	{{ partial "_head.html" .}}
+	{{/*  {{ partial "head.html" .}} */}}
+
+</head>
+
+<body>
+	{{ partial "_nav.html" .}}
+	{{/*  {{ partial "nav.html" .}} */}}
+
+	{{ partial "_hero.html" .}}
+	{{/*  {{ partial "hero.html" .}} */}}
+
+	{{ partial "_intro.html" .}}
+	{{/*  {{ partial "intro.html" .}} */}}
+
+	{{/*  clone from work template  */}}
+	{{ if .Site.Params.commissions.enable }}
+	{{ partial "_commissions.html" .}}
+	{{ end }}
+
+	{{/*  clone from work template  */}}
+	{{ if .Site.Params.publi.enable }}
+	{{ partial "_publications.html" .}}
+	{{ end }}
+
+	{{/*  clone from work with testimonials style  */}}
+	{{ if .Site.Params.collab.enable }}
+	{{ partial "_collaborations.html" .}}
+	{{ end }}
+
+	{{/*  clone from work with testimonials style  */}}
+	{{ if .Site.Params.other.enable }}
+	{{ partial "_other.html" .}}
+	{{ end }}
+
+	{{/*  old template pages  */}}
+	{{ if .Site.Params.work.enable }}
+	{{ partial "work.html" .}}
+	{{ end }}
+
+	{{ if .Site.Params.testimonials.enable }}
+	{{ partial "testimonials.html" .}}
+	{{ end }}
+
+	{{ if .Site.Params.services.enable }}
+	{{ partial "services.html" .}}
+	{{ end }}
+
+	{{ if .Site.Params.about.enable }}
+	{{ partial "about.html" .}}
+	{{ end }}
+
+	{{ if .Site.Params.counters.enable }}
+	{{ partial "counters.html" .}}
+	{{ end }}
+
+	{{ if .Site.Params.contact.enable }}
+	{{ partial "contact.html" .}}
+	{{ end }}
+
+	{{ if .Site.Params.footer.enable }}
+	{{ partial "footer.html" .}}
+	{{ end }}
+
+	{{ partial "js.html" .}}
+</body>
+
+</html>

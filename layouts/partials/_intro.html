@@ -1,0 +1,95 @@
+<section id="fh5co-intro">
+	<div class="container">
+		{{/*  About biog text  */}}
+		<div class="row col-md-12 section-heading text-center">
+			<h2 class="to-animate">{{ with .Site.Params.intro.biog.title }}{{ . | markdownify }}{{ end }}</h2>
+			<div class="row">
+				<div class="col-md-8 col-md-offset-2 subtext to-animate text-left">
+					{{ range .Site.Params.intro.biog.description }}
+					<p>{{ . | markdownify }}</p>
+					{{ end }}
+				</div>
+			</div>
+		</div>
+
+
+		{{/*  list of interest or other activities  */}}
+		{{/*  {{ if .Site.Params.intro.enableList }}
+
+		<div class="row col-md-12 section-heading text-center">
+			<h2 class="to-animate">{{ with .Site.Params.intro.biog.otherWorkList }}{{ . | markdownify }}{{ end }}</h2>
+		</div>
+
+		<div class="col-md-8 col-md-offset-2 subtext to-animate">
+			<ul>
+				{{ range .Site.Params.intro.biog.otherWork }}
+				<li> {{ . | markdownify }} </li>
+				{{ end }}
+			</ul>
+		</div>
+		{{end}} */}}
+
+		{{/*  button to download the CV  */}}
+		{{/*  <div class="row form-group center-block" style="padding-top: 2em;">
+				<input class="btn btn-primary btn-lg" value="{{ .Site.Params.intro.button | markdownify }}"
+		type="submit">
+	</div> */}}
+
+
+	{{/*  video showreel demo  */}}
+	{{/*  {{ if .Site.Params.intro.video.enable }}
+	<div class="row watch-video text-center to-animate">
+		<!-- <span>{{ with .Site.Params.intro.video }}{{ . }}{{ end }}</span> -->
+		<span>{{.Site.Params.intro.video.title | markdownify }}</span>
+
+		<a href="{{ .Site.Params.intro.video.url }}" class="popup-vimeo btn-video"><i
+				class="{{ .Site.Params.intro.video.icon | markdownify }}"></i></a>
+	</div>
+	{{ end }} */}}
+
+	{{/*  education and interest blocks  */}}
+	{{ if .Site.Params.intro.enableBox }}
+	<div class=" row center-block ">
+		{{ range .Site.Params.intro.item }}
+		<div class="fh5co-block to-animate "> 
+			<div class="overlay-darker"></div>
+			<div class="overlay"></div>
+
+			<div class="fh5co-text">
+				<i class="fh5co-intro-icon {{ .icon }}"></i>
+				<h2>{{ .title }}</h2>
+				<p>{{ .description }}</p>
+
+				<!-- if the paragraph title is education add icon and remove bullets  --->
+				{{ if eq .title "Education"}}
+				<ul>
+					{{ range .list }}
+					<li style="text-align: left;list-style-type: none;">
+						{{ if strings.Contains . "University of Sussex"}}
+						{{ . }}
+						{{ else }}
+						<i class="icon-graduation-cap" style="padding-right:5px"></i>{{ . | markdownify }}
+						{{ end }}
+					</li>
+					{{ end }}
+
+				</ul>
+				<!-- just add bullets  --->
+				{{else}}
+				<ul>
+					{{ range .list }}
+					<li style="white-space: nowrap;text-align: left;">{{ . }}</li>
+					{{ end }}
+				</ul>
+				{{ end }}
+
+				<!-- add a button to the box  --->
+				{{ if .button}}
+				<p><a href="{{ .url }}" class="btn btn-primary">{{ .button}}</a></p>
+				{{ end }}
+			</div>
+		</div>
+		{{ end }}
+	</div>
+	{{end}}
+</section>
